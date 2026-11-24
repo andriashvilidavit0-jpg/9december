@@ -1,0 +1,1703 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monster;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: monster;
+  src: url("./Montserrat-VariableFont_wght.ttf");
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  color: black;
+  justify-content: space-between;
+  margin: auto;
+  /* padding-left: 4%;
+  padding-right: 4%; */
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding: 4%;
+}
+nav .fa-bars {
+  display: none;
+}
+nav .mini {
+  display: flex;
+  align-items: center;
+}
+nav img {
+  font-size: 87px;
+  margin-right: 10px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+nav ul .li2 {
+  margin-right: 70px;
+}
+nav ul .li1 {
+  position: relative;
+}
+nav ul .li1 input {
+  display: none;
+}
+nav ul .li1 ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  gap: 0;
+  background-color: pink;
+  z-index: 1;
+  min-width: 200px;
+}
+nav ul .li1 ul li {
+  line-height: 30px;
+  display: block;
+  border-radius: 20px;
+}
+nav ul #check:checked ~ ul {
+  display: block;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 20px;
+  min-height: 150px;
+  border-radius: 20px;
+  padding: 5px;
+}
+nav ul #check:checked ~ ul li a:hover {
+  background-color: rgb(133, 88, 95);
+  color: black;
+}
+nav ul li {
+  display: block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover {
+  color: #9B5940;
+}
+
+main {
+  padding: 4%;
+}
+main .sec1 {
+  width: 100%;
+  background-color: #7D3520;
+  height: 600px;
+  margin: aut;
+  margin-top: 150px;
+  border-radius: 20px;
+  background-image: url("./bccimg.jpg");
+  /*  background-position-x: 30px;
+  background-position-y: 200%;
+  background-size: 92%; */
+  background-size: cover;
+  display: flex;
+}
+main .sec1 aside {
+  width: 70%;
+  height: 700px;
+  padding: 43px;
+  color: rgb(1, 0, 0);
+}
+main .sec1 aside ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+main .sec1 aside h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+main .sec1 aside h1 .br1 {
+  display: none;
+}
+main .sec1 aside p {
+  margin-bottom: 15px;
+}
+main .sec1 aside p button {
+  border: 0;
+  width: 215px;
+  height: 50px;
+  background-color: #9B5940;
+  color: white;
+  border-radius: 10px;
+}
+main .sec1 aside p button:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border: 2px solid white;
+}
+main .sec1 aside p button .arr {
+  transform: rotate(45deg);
+}
+main .sec1 aside p button:hover .arr {
+  transition: 0.5s;
+  transform: rotate(45deg) scale(1.5);
+}
+main .sec1 aside p .btn1 {
+  background-color: transparent;
+  border: 2px solid white;
+}
+main .sec1 .as1 {
+  background-color: blueviole;
+  height: 100%;
+  width: 30%;
+  position: relative;
+}
+main .sec1 .as1 .btn5 {
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+  background-color: white;
+  color: black;
+}
+main .sec1 .as1 .btn4 {
+  position: absolute;
+  bottom: 115px;
+  right: 40px;
+  background-color: white;
+  color: black;
+}
+main .sec1 .as1 .btn3 {
+  position: absolute;
+  bottom: 180px;
+  right: 40px;
+  background-color: white;
+  color: black;
+}
+main .sec2 .p1 {
+  margin-top: 40px;
+}
+main .sec2 .div3 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+main .sec2 .div3 aside {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  height: 270px;
+  background-color: #F3ECEB;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+main .sec2 .div3 aside p .br2 {
+  display: none;
+}
+main .sec2 .div3 aside h1 {
+  margin-bottom: 30px;
+}
+main .sec3 .p2 {
+  margin-top: 80px;
+}
+main .sec3 p {
+  margin-top: 20px;
+}
+main .sec3 h1 {
+  margin-top: 20px;
+}
+main .sec3 button {
+  border: 0;
+  width: 215px;
+  height: 50px;
+  background-color: #9B5940;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+main .sec3 button:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border: 2px solid #9B5940;
+  color: #9B5940;
+}
+main .sec3 button .arr {
+  transform: rotate(45deg);
+}
+main .sec3 button:hover .arr {
+  transition: 0.5s;
+  transform: rotate(45deg) scale(1.5);
+}
+main .sec3 .div4 {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .sec3 .div4 aside {
+  width: 450px;
+  height: 500px;
+  background-color: blueviolet;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+main .sec3 .div4 aside p {
+  font-size: smaller;
+  filter: brightness(1) !important;
+}
+main .sec3 .div4 aside div {
+  filter: brightness(2) !important;
+}
+main .sec3 .div4 .as2,
+main .sec3 .div4 .as3,
+main .sec3 .div4 .as4 {
+  margin-top: 60px;
+}
+main .sec3 .div4 .as2 {
+  background-image: url("./Person Holding Book.avif");
+  background-size: 635px;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  overflow: hidden;
+}
+main .sec3 .div4 .as3 {
+  background-image: url("./Open Magazine Spread.avif");
+  background-size: 635px;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+main .sec3 .div4 .as4 {
+  background-image: url("./Open Magazine With Peaches.avif");
+  background-size: 635px;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+main .sec3 .div4 .as5 {
+  background-image: url("./Hand Holding Magazine.avif");
+  background-size: 635px;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+main .sec3 .div4 .as6 {
+  background-image: url("./Stylish Flat Lay.avif");
+  background-size: 635px;
+  background-size: cover;
+  background-position: top;
+  filter: brightness(0.5);
+}
+main .sec3 .div4 .as7 {
+  background-image: url("./Hand Holding Magazine (1).avif");
+  background-size: 635px;
+  background-size: cover;
+  background-position: right center;
+  filter: brightness(0.5);
+}
+main .div5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .div5 .minier p .br1 {
+  display: none;
+}
+main .div5 section {
+  margin-top: 170px;
+}
+main .div5 .secleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: blueviole;
+  height: 500px;
+  width: 50%;
+}
+main .div5 .secleft h1 {
+  font-size: 40px;
+}
+main .div5 .secleft button {
+  border: 0;
+  width: 215px;
+  height: 50px;
+  background-color: #9B5940;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+main .div5 .secleft button:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border: 2px solid #9B5940;
+  color: #9B5940;
+}
+main .div5 .secleft button .arr {
+  transform: rotate(45deg);
+}
+main .div5 .secleft button:hover .arr {
+  transition: 0.5s;
+  transform: rotate(45deg) scale(1.5);
+}
+main .div5 .secright {
+  width: 50%;
+  height: 500px;
+  background-color: #F1D4CA;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 20px;
+}
+main .div5 .secright h1 {
+  font-size: 100px;
+  color: #F3ECEB;
+}
+main .div5 .secright:focus ~ .fleks .no {
+  display: block;
+  width: 50%;
+  height: 500px;
+  background-color: #F1D4CA;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+main .fleks {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+}
+main .fleks .secright {
+  width: 50%;
+  height: 500px;
+  background-color: #F1D4CA;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+main .fleks .secright h1 {
+  font-size: 100px;
+  color: #F3ECEB;
+}
+main .fleks .no {
+  display: none;
+  transition: 1s;
+}
+main .sec4 {
+  width: 100%;
+  height: 630px;
+  background-color: #F3ECEB;
+  margin-top: 200px;
+  left: 0;
+  padding: 60px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+main .sec4 .p5 .br1 {
+  display: none;
+}
+main .sec4 h1 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+main .sec4 p {
+  margin-top: 20px;
+}
+main .sec4 button {
+  border: 0;
+  width: 215px;
+  height: 50px;
+  background-color: #9B5940;
+  color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+main .sec4 button:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border: 2px solid #9B5940;
+  color: #9B5940;
+}
+main .sec4 button .arr {
+  transform: rotate(45deg);
+}
+main .sec4 button:hover .arr {
+  transition: 0.5s;
+  transform: rotate(45deg) scale(1.5);
+}
+main .sec4 .mini2 {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+main .sec4 .mini2 aside {
+  width: 338px;
+  height: 300px;
+  background-color: #F1D4CA;
+  padding: 25px;
+  padding-top: 50px;
+  border-radius: 20px;
+  flex: 1 1 280px;
+  max-width: 338px;
+  min-width: 0;
+}
+main .sec4 .mini2 aside ul {
+  list-style: none;
+  display: flex;
+  gap: 7px;
+}
+main .sec4 .mini2 aside ul li .fa-star {
+  color: #B66B4E;
+}
+main .sec4 .mini2 aside .divp {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+main .p4 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+main .p5 {
+  margin-top: 20px;
+}
+main .p5 .br1 {
+  display: none;
+}
+main button {
+  border: 0;
+  width: 215px;
+  height: 50px;
+  background-color: #9B5940;
+  color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+main button:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border: 2px solid #9B5940;
+  color: #9B5940;
+}
+main button .arr {
+  transform: rotate(45deg);
+}
+main button:hover .arr {
+  transition: 0.5s;
+  transform: rotate(45deg) scale(1.5);
+}
+main .div6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  position: relative;
+}
+main .div6 .divmg {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+main .div6 .divmg img {
+  height: 100%;
+  width: 100%;
+  margin-top: 0px;
+  border-radius: 20px;
+  transition: 1s;
+}
+main .div6 .divmg img:hover {
+  scale: 110%;
+  overflow: hidden;
+  transition: 1s;
+  filter: brightness(0.5);
+}
+main .div6 p {
+  width: 50px;
+  height: 50px;
+  background-color: #9B5940;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: -1%;
+  top: 300px;
+  cursor: pointer;
+  z-index: 9;
+}
+main .div6 p i {
+  transform: rotate(-90deg);
+  font-size: 30px;
+  color: white;
+  position: absolute;
+}
+
+.big {
+  width: 100%;
+  height: 550px;
+  background-color: #F3ECEB;
+  border-radius: 20px;
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+.big button {
+  border: 0;
+  width: 215px;
+  height: 50px;
+  background-color: #9B5940;
+  color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.big button:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border: 2px solid #9B5940;
+  color: #9B5940;
+}
+.big button .arr {
+  transform: rotate(45deg);
+}
+.big button:hover .arr {
+  transition: 0.5s;
+  transform: rotate(45deg) scale(1.5);
+}
+.big .divb {
+  margin-top: 40px;
+}
+.big .divb label {
+  display: block;
+  transition: 1s;
+}
+.big .divb label h2 {
+  margin-top: 50px;
+}
+.big .divb label h2 i {
+  transform: rotate(225deg);
+  transition: 0.5s;
+}
+.big .divb label h2 p {
+  font-size: 12px;
+  visibility: hidden;
+  transform: translateY(0px);
+  transition: 0.3s;
+}
+.big .divb label h2 hr {
+  width: 500px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.big .divb input {
+  display: none;
+}
+.big .divb #check1:checked ~ .lab1 p {
+  visibility: visible;
+}
+.big .divb #check2:checked ~ .lab2 p {
+  visibility: visible;
+}
+.big .divb #check3:checked ~ .lab3 p {
+  visibility: visible;
+}
+.big .divb #check1:checked ~ .lab1 h2 hr {
+  transform: translateY(40px);
+  transition: transform 0.5s;
+}
+.big .divb #check2:checked ~ .lab2 h2 hr {
+  transform: translateY(40px);
+  transition: transform 0.5s;
+}
+.big .divb #check3:checked ~ .lab3 h2 hr {
+  transform: translateY(40px);
+  transition: transform 0.5s;
+}
+.big .divb #check1:checked ~ .lab1 h2 p {
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+.big .divb #check2:checked ~ .lab2 h2 p {
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+.big .divb #check3:checked ~ .lab3 h2 p {
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+.big .divb #check1:checked ~ .lab2 {
+  transform: translateY(40px);
+}
+.big .divb #check1:checked ~ .lab3 {
+  transform: translateY(40px);
+}
+.big .divb #check2:checked ~ .lab3 {
+  transform: translateY(80px);
+}
+.big .divb #check1:checked ~ .lab1 h2 i {
+  transform: rotate(405deg);
+  transition: 0.5s;
+}
+.big .divb #check2:checked ~ .lab2 h2 i {
+  transform: rotate(405deg);
+  transition: 0.5s;
+}
+.big .divb #check3:checked ~ .lab3 h2 i {
+  transform: rotate(405deg);
+  transition: 0.5s;
+}
+
+.smallest {
+  width: 100%;
+  height: 120px;
+  background-color: #9B5940;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.smallest h1 {
+  font-size: 38px;
+}
+
+.smaller {
+  width: 100%;
+  height: 400px;
+  background-color: #F3ECEB;
+  padding: 4%;
+}
+.smaller p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.smaller button {
+  border: 0;
+  width: 215px;
+  height: 50px;
+  background-color: #9B5940;
+  color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.smaller button:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border: 2px solid #9B5940;
+  color: #9B5940;
+}
+.smaller button .arr {
+  transform: rotate(45deg);
+}
+.smaller button:hover .arr {
+  transition: 0.5s;
+  transform: rotate(45deg) scale(1.5);
+}
+
+footer {
+  width: 100%;
+  height: 120vh;
+  background-color: #9B5940;
+  padding: 4%;
+  color: white;
+}
+footer p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .imp {
+  display: grid;
+  grid-template-columns: 1fr, 1fr 0px, 0px;
+  grid-template-rows: 0px, 0px, 1fr, 1fr;
+  gap: 15px;
+  color: white;
+}
+footer .imp input {
+  border: 1px solid white;
+  border-bottom-color: 1px solid white;
+  border-top-color: #9B5940;
+  background-color: #9B5940;
+  border-right-color: #9B5940;
+  border-left-color: #9B5940;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+footer .imp input::-moz-placeholder {
+  color: white;
+}
+footer .imp input::placeholder {
+  color: white;
+}
+footer .imp input:focus {
+  outline: none;
+}
+footer .imp .inp1 {
+  grid-column: span 2;
+  margin-top: 40px;
+}
+footer .imp textarea {
+  grid-column: span 2;
+  height: 100px;
+  border: 1px solid white;
+  border-bottom-color: 1px solid white;
+  border-top-color: #9B5940;
+  background-color: #9B5940;
+  border-right-color: #9B5940;
+  border-left-color: #9B5940;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+footer .imp textarea::-moz-placeholder {
+  color: white;
+}
+footer .imp textarea::placeholder {
+  color: white;
+}
+footer .imp textarea:focus {
+  outline: none;
+}
+footer .imp .griddy {
+  width: 200%;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .imp .griddy button {
+  width: 50%;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  color: #9B5940;
+}
+footer .h11 {
+  font-size: 150px;
+  margin-top: 50px;
+}
+footer .sec1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .sec1 .div3 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+footer .sec1 .div4 {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .sec1 .div4 a .arro {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+footer .ul1 {
+  display: flex;
+  list-style: none;
+}
+footer .ul1 li {
+  font-size: 30px;
+  margin-top: 50px;
+}
+footer .p1 {
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+@media (width < 950px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monster;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  @font-face {
+    font-family: monster;
+    src: url("./Montserrat-VariableFont_wght.ttf");
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  nav {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding: 4%;
+  }
+  nav .fa-bars {
+    display: block;
+    font-size: 36px;
+  }
+  nav .mini {
+    display: flex;
+    align-items: center;
+  }
+  nav img {
+    font-size: 87px;
+    margin-right: 10px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    display: none;
+  }
+  nav ul .li2 {
+    margin-right: 70px;
+  }
+  nav ul .li1 {
+    position: relative;
+  }
+  nav ul .li1 input {
+    display: none;
+  }
+  nav ul .li1 ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    gap: 0;
+    background-color: pink;
+    z-index: 1;
+    min-width: 200px;
+  }
+  nav ul .li1 ul li {
+    line-height: 30px;
+    display: block;
+    border-radius: 20px;
+  }
+  nav ul #check:checked ~ ul {
+    display: block;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+    min-height: 150px;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  nav ul #check:checked ~ ul li a:hover {
+    background-color: rgb(133, 88, 95);
+    color: black;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  nav ul li a:hover {
+    color: #9B5940;
+  }
+  main {
+    padding: 4%;
+  }
+  main .sec1 {
+    width: 100%;
+    background-color: #7D3520;
+    height: 600px;
+    margin: aut;
+    margin-top: 150px;
+    border-radius: 20px;
+    background-image: url("./bccimg.jpg");
+    /*  background-position-x: 30px;
+    background-position-y: 200%;
+    background-size: 92%; */
+    background-size: cover;
+    display: flex;
+  }
+  main .sec1 aside {
+    width: 70%;
+    height: 700px;
+    padding: 43px;
+    color: rgb(1, 0, 0);
+  }
+  main .sec1 aside ul {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  main .sec1 aside h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  main .sec1 aside h1 br {
+    display: none;
+  }
+  main .sec1 aside h1 {
+    /* .br1 {
+        display: initial;
+    } */
+  }
+  main .sec1 aside p {
+    margin-bottom: 15px;
+  }
+  main .sec1 aside p br {
+    display: none;
+  }
+  main .sec1 aside p button {
+    border: 0;
+    width: 250px;
+    height: 80px;
+    background-color: #9B5940;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  main .sec1 aside p button:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid white;
+  }
+  main .sec1 aside p button .arr {
+    transform: rotate(45deg);
+  }
+  main .sec1 aside p button:hover .arr {
+    transition: 0.5s;
+    transform: rotate(45deg) scale(1.5);
+  }
+  main .sec1 aside p .btn1 {
+    background-color: transparent;
+    border: 2px solid white;
+  }
+  main .sec1 .as1 {
+    background-color: blueviole;
+    height: 100%;
+    width: 30%;
+    position: relative;
+    display: flex;
+    gap: 15px;
+  }
+  main .sec1 .as1 .btn5 {
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    background-color: white;
+    color: black;
+    bottom: 2px;
+  }
+  main .sec1 .as1 .btn4 {
+    position: absolute;
+    bottom: 115px;
+    right: 40px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    bottom: 90px;
+  }
+  main .sec1 .as1 .btn3 {
+    position: absolute;
+    bottom: 180px;
+    right: 40px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+  }
+  main .sec2 .p1 {
+    margin-top: 40px;
+  }
+  main .sec2 .div3 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  main .sec2 .div3 aside {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 270px;
+    background-color: #F3ECEB;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+  main .sec2 .div3 aside p .br1 {
+    display: none;
+  }
+  main .sec2 .div3 aside p .br2 {
+    display: initial;
+  }
+  main .sec2 .div3 aside h1 {
+    margin-bottom: 30px;
+  }
+  main .sec3 .p2 {
+    margin-top: 80px;
+  }
+  main .sec3 p {
+    margin-top: 20px;
+  }
+  main .sec3 h1 {
+    margin-top: 20px;
+  }
+  main .sec3 button {
+    border: 0;
+    width: 215px;
+    height: 50px;
+    background-color: #9B5940;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  main .sec3 button:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid #9B5940;
+    color: #9B5940;
+  }
+  main .sec3 button .arr {
+    transform: rotate(45deg);
+  }
+  main .sec3 button:hover .arr {
+    transition: 0.5s;
+    transform: rotate(45deg) scale(1.5);
+  }
+  main .sec3 .div4 {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .sec3 .div4 aside {
+    width: 270px;
+    height: 400px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  main .sec3 .div4 aside p {
+    font-size: smaller;
+    filter: brightness(1) !important;
+  }
+  main .sec3 .div4 aside div {
+    filter: brightness(2) !important;
+  }
+  main .sec3 .div4 .as2,
+  main .sec3 .div4 .as3,
+  main .sec3 .div4 .as4 {
+    margin-top: 60px;
+  }
+  main .sec3 .div4 .as2 {
+    background-image: url("./Person Holding Book.avif");
+    background-size: 635px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+  }
+  main .sec3 .div4 .as3 {
+    background-image: url("./Open Magazine Spread.avif");
+    background-size: 635px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+  }
+  main .sec3 .div4 .as4 {
+    background-image: url("./Open Magazine With Peaches.avif");
+    background-size: 635px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+  }
+  main .sec3 .div4 .as5 {
+    background-image: url("./Hand Holding Magazine.avif");
+    background-size: 635px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+  }
+  main .sec3 .div4 .as6 {
+    background-image: url("./Stylish Flat Lay.avif");
+    background-size: 635px;
+    background-size: cover;
+    background-position: top;
+    filter: brightness(0.5);
+  }
+  main .sec3 .div4 .as7 {
+    background-image: url("./Hand Holding Magazine (1).avif");
+    background-size: 635px;
+    background-size: cover;
+    background-position: right center;
+    filter: brightness(0.5);
+  }
+  main .div5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .div5 .minier p .br1 {
+    display: block;
+  }
+  main .div5 section {
+    margin-top: 170px;
+  }
+  main .div5 .secleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: blueviole;
+    height: 500px;
+    width: 50%;
+  }
+  main .div5 .secleft h1 {
+    font-size: 40px;
+  }
+  main .div5 .secleft button {
+    border: 0;
+    width: 215px;
+    height: 50px;
+    background-color: #9B5940;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  main .div5 .secleft button:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid #9B5940;
+    color: #9B5940;
+  }
+  main .div5 .secleft button .arr {
+    transform: rotate(45deg);
+  }
+  main .div5 .secleft button:hover .arr {
+    transition: 0.5s;
+    transform: rotate(45deg) scale(1.5);
+  }
+  main .div5 .secright {
+    width: 50%;
+    height: 500px;
+    background-color: #F1D4CA;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+  }
+  main .div5 .secright h1 {
+    font-size: 100px;
+    color: #F3ECEB;
+  }
+  main .div5 .secright:focus ~ .fleks .no {
+    display: block;
+    width: 50%;
+    height: 500px;
+    background-color: #F1D4CA;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  main .fleks {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+  }
+  main .fleks .secright {
+    width: 50%;
+    height: 500px;
+    background-color: #F1D4CA;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  main .fleks .secright h1 {
+    font-size: 100px;
+    color: #F3ECEB;
+  }
+  main .fleks .no {
+    display: none;
+    transition: 1s;
+  }
+  main .sec4 {
+    width: 100%;
+    height: 630px;
+    background-color: #F3ECEB;
+    margin-top: 200px;
+    left: 0;
+    padding: 60px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+  }
+  main .sec4 h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  main .sec4 p {
+    margin-top: 20px;
+  }
+  main .sec4 button {
+    border: 0;
+    width: 215px;
+    height: 50px;
+    background-color: #9B5940;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  main .sec4 button:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid #9B5940;
+    color: #9B5940;
+  }
+  main .sec4 button .arr {
+    transform: rotate(45deg);
+  }
+  main .sec4 button:hover .arr {
+    transition: 0.5s;
+    transform: rotate(45deg) scale(1.5);
+  }
+  main .sec4 .mini2 {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main .sec4 .mini2 aside {
+    width: 0px;
+    height: 300px;
+    background-color: #F1D4CA;
+    padding: 25px;
+    padding-top: 50px;
+    border-radius: 20px;
+    flex: 1 1 280px;
+    max-width: 220px;
+  }
+  main .sec4 .mini2 aside ul {
+    list-style: none;
+    display: flex;
+    gap: 7px;
+  }
+  main .sec4 .mini2 aside ul li .fa-star {
+    color: #B66B4E;
+  }
+  main .sec4 .mini2 aside .divp {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  main .p4 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  main .p5 {
+    margin-top: 20px;
+  }
+  main .p5 .br1 {
+    display: block;
+  }
+  main .p5 .br2 {
+    display: none;
+  }
+  main button {
+    border: 0;
+    width: 215px;
+    height: 50px;
+    background-color: #9B5940;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  main button:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid #9B5940;
+    color: #9B5940;
+  }
+  main button .arr {
+    transform: rotate(45deg);
+  }
+  main button:hover .arr {
+    transition: 0.5s;
+    transform: rotate(45deg) scale(1.5);
+  }
+  main .div6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    position: relative;
+  }
+  main .div6 .divmg {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  main .div6 .divmg img {
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 20px;
+    transition: 1s;
+  }
+  main .div6 .divmg img:hover {
+    scale: 110%;
+    overflow: hidden;
+    transition: 1s;
+    filter: brightness(0.5);
+  }
+  main .div6 p {
+    width: 50px;
+    height: 50px;
+    background-color: #9B5940;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: -1%;
+    top: 300px;
+    cursor: pointer;
+    z-index: 9;
+  }
+  main .div6 p i {
+    transform: rotate(-90deg);
+    font-size: 30px;
+    color: white;
+    position: absolute;
+  }
+  .big {
+    width: 100%;
+    height: 550px;
+    background-color: #F3ECEB;
+    border-radius: 20px;
+    padding: 4%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .big button {
+    border: 0;
+    width: 215px;
+    height: 50px;
+    background-color: #9B5940;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .big button:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid #9B5940;
+    color: #9B5940;
+  }
+  .big button .arr {
+    transform: rotate(45deg);
+  }
+  .big button:hover .arr {
+    transition: 0.5s;
+    transform: rotate(45deg) scale(1.5);
+  }
+  .big .divb {
+    margin-top: 40px;
+  }
+  .big .divb label {
+    display: block;
+    transition: 1s;
+  }
+  .big .divb label h2 {
+    margin-top: 50px;
+  }
+  .big .divb label h2 i {
+    transform: rotate(225deg);
+    transition: 0.5s;
+  }
+  .big .divb label h2 p {
+    font-size: 12px;
+    visibility: hidden;
+    transform: translateY(0px);
+    transition: 0.3s;
+  }
+  .big .divb label h2 hr {
+    width: 500px;
+    margin-top: 20px;
+    transition: 0.5s;
+  }
+  .big .divb input {
+    display: none;
+  }
+  .big .divb #check1:checked ~ .lab1 p {
+    visibility: visible;
+  }
+  .big .divb #check2:checked ~ .lab2 p {
+    visibility: visible;
+  }
+  .big .divb #check3:checked ~ .lab3 p {
+    visibility: visible;
+  }
+  .big .divb #check1:checked ~ .lab1 h2 hr {
+    transform: translateY(40px);
+    transition: transform 0.5s;
+  }
+  .big .divb #check2:checked ~ .lab2 h2 hr {
+    transform: translateY(40px);
+    transition: transform 0.5s;
+  }
+  .big .divb #check3:checked ~ .lab3 h2 hr {
+    transform: translateY(40px);
+    transition: transform 0.5s;
+  }
+  .big .divb #check1:checked ~ .lab1 h2 p {
+    transform: translateY(40px);
+    transition: 0.5s;
+  }
+  .big .divb #check2:checked ~ .lab2 h2 p {
+    transform: translateY(40px);
+    transition: 0.5s;
+  }
+  .big .divb #check3:checked ~ .lab3 h2 p {
+    transform: translateY(40px);
+    transition: 0.5s;
+  }
+  .big .divb #check1:checked ~ .lab2 {
+    transform: translateY(40px);
+  }
+  .big .divb #check1:checked ~ .lab3 {
+    transform: translateY(40px);
+  }
+  .big .divb #check2:checked ~ .lab3 {
+    transform: translateY(80px);
+  }
+  .big .divb #check1:checked ~ .lab1 h2 i {
+    transform: rotate(405deg);
+    transition: 0.5s;
+  }
+  .big .divb #check2:checked ~ .lab2 h2 i {
+    transform: rotate(405deg);
+    transition: 0.5s;
+  }
+  .big .divb #check3:checked ~ .lab3 h2 i {
+    transform: rotate(405deg);
+    transition: 0.5s;
+  }
+  .smallest {
+    width: 100%;
+    height: 120px;
+    background-color: #9B5940;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .smallest h1 {
+    font-size: 38px;
+  }
+  .smallest h1 .span1 {
+    display: none;
+  }
+  .smaller {
+    width: 100%;
+    height: 400px;
+    background-color: #F3ECEB;
+    padding: 4%;
+  }
+  .smaller p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .smaller button {
+    border: 0;
+    width: 215px;
+    height: 50px;
+    background-color: #9B5940;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  .smaller button:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid #9B5940;
+    color: #9B5940;
+  }
+  .smaller button .arr {
+    transform: rotate(45deg);
+  }
+  .smaller button:hover .arr {
+    transition: 0.5s;
+    transform: rotate(45deg) scale(1.5);
+  }
+  footer {
+    width: 100%;
+    height: 120vh;
+    background-color: #9B5940;
+    padding: 4%;
+    color: white;
+  }
+  footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  footer .imp {
+    display: grid;
+    grid-template-columns: 1fr, 1fr 0px, 0px;
+    grid-template-rows: 0px, 0px, 1fr, 1fr;
+    gap: 15px;
+    color: white;
+  }
+  footer .imp input {
+    border: 1px solid white;
+    border-bottom-color: 1px solid white;
+    border-top-color: #9B5940;
+    background-color: #9B5940;
+    border-right-color: #9B5940;
+    border-left-color: #9B5940;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+  }
+  footer .imp input::-moz-placeholder {
+    color: white;
+  }
+  footer .imp input::placeholder {
+    color: white;
+  }
+  footer .imp input:focus {
+    outline: none;
+  }
+  footer .imp .inp1 {
+    grid-column: span 2;
+    margin-top: 40px;
+  }
+  footer .imp textarea {
+    grid-column: span 2;
+    height: 100px;
+    border: 1px solid white;
+    border-bottom-color: 1px solid white;
+    border-top-color: #9B5940;
+    background-color: #9B5940;
+    border-right-color: #9B5940;
+    border-left-color: #9B5940;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  footer .imp textarea::-moz-placeholder {
+    color: white;
+  }
+  footer .imp textarea::placeholder {
+    color: white;
+  }
+  footer .imp textarea:focus {
+    outline: none;
+  }
+  footer .imp .griddy {
+    width: 200%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer .imp .griddy button {
+    width: 50%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: #9B5940;
+  }
+  footer .h11 {
+    font-size: 110px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  footer .sec1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .sec1 .div3 ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  footer .sec1 .div4 {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer .sec1 .div4 a .arro {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  footer .ul1 {
+    display: flex;
+    list-style: none;
+  }
+  footer .ul1 li {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  footer .p1 {
+    font-size: 12px;
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
